@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/png" href="../static/favicon.ico"/>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,29 +52,47 @@
                         <li class="nav-item active">
                             <a href="/about" class="nav-link">About Us</a>
                         </li>
+                        <li class="nav-item active">
+                            <a href="/locations" class="nav-link">Locations</a>
+                        </li>
                         <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a href="#" class="dropdown-item">Skilled Nursing Services</a>
-                                <a href="#" class="dropdown-item">Companion Services</a>
-                                <a href="#" class="dropdown-item">Homemaker Services</a>
-                                <a href="#" class="dropdown-item">Supported Living</a>
-                                <a href="#" class="dropdown-item">Respite Care</a>
+                                <a href="/skilled-nursing-services" class="dropdown-item">Skilled Nursing Services</a>
+                                <a href="/companion-services" class="dropdown-item">Companion Services</a>
+                                <a href="/homemaker-services" class="dropdown-item">Homemaker Services</a>
+                                <a href="/supported-living-services" class="dropdown-item">Supported Living</a>
+                                <a href="/respite-services" class="dropdown-item">Respite Care</a>
                             </div>
                         </div>
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Resources</a>
+                            <a href="/resources" class="nav-link">Resources</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Contact Us</a>
+                            <a href="/contact-form" class="nav-link">Contact Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Caring Careers</a>
+                            <a href="/apply" class="nav-link">Apply Now</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="container">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            <span>{{ message }}</span>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor%}
+                {% endif%}
+            {% endwith %}
+        </div>
+        
         {% block content %} {% endblock %}
         <hr class="my-4">
         <footer class="footer text-center text-md-left">
@@ -86,7 +105,7 @@
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">
-                        <a class=".text-muted text-dark" href="#">Contact Us</a>
+                        <a class=".text-muted text-dark" href="/contact-form">Contact Us</a>
                     </h6>
                 </div>
             </div>
