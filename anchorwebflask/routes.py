@@ -4,62 +4,62 @@ from email.message import EmailMessage
 
 from flask import render_template, redirect, request, flash
 
-from anchorwebflask import app
+from anchorwebflask import application
 
 EMAIL_USER = os.environ.get('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 SECRET_KEY = os.environ.get('SESSION_KEY')
 
-app.secret_key = SECRET_KEY
+application.secret_key = SECRET_KEY
 
 
-@app.route('/', methods=['GET'])
-@app.route('/home', methods=['GET'])
+@application.route('/', methods=['GET'])
+@application.route('/home', methods=['GET'])
 def home():
     return render_template('home.html')
 
 
-@app.route('/about', methods=['GET'])
+@application.route('/about', methods=['GET'])
 def about():
     return render_template('about.html', title="About")
 
 
-@app.route('/skilled-nursing-services', methods=['GET'])
+@application.route('/skilled-nursing-services', methods=['GET'])
 def nursing():
     return render_template('skillednursingservices.html', title="Skills")
 
 
-@app.route('/companion-services', methods=['GET'])
+@application.route('/companion-services', methods=['GET'])
 def companion():
     return render_template('companionservices.html', title="Skills")
 
 
-@app.route('/homemaker-services', methods=['GET'])
+@application.route('/homemaker-services', methods=['GET'])
 def homemaker():
     return render_template('homemakerservices.html', title="Skills")
 
 
-@app.route('/supported-living-services', methods=['GET'])
+@application.route('/supported-living-services', methods=['GET'])
 def supported():
     return render_template('supportedliving.html', title="Skills")
 
 
-@app.route('/respite-services', methods=['GET'])
+@application.route('/respite-services', methods=['GET'])
 def respite():
     return render_template('respiteservices.html', title="Skills")
 
 
-@app.route('/resources', methods=['GET'])
+@application.route('/resources', methods=['GET'])
 def resources():
     return render_template('resources.html', title="Resources")
 
 
-@app.route('/locations', methods=['GET'])
+@application.route('/locations', methods=['GET'])
 def locations():
     return render_template('locations.html', title="Locations")
 
 
-@app.route('/apply', methods=['GET', 'POST'])
+@application.route('/apply', methods=['GET', 'POST'])
 def apply():
     if request.method == 'POST':
         pass
@@ -67,7 +67,7 @@ def apply():
     return render_template('apply.html', title="Apply")
 
 
-@app.route('/contact-form', methods=['POST', 'GET'])
+@application.route('/contact-form', methods=['POST', 'GET'])
 def contactform():
     form = request.form
     missing = list()
