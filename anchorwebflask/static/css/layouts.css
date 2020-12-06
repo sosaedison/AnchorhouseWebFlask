@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 900px) {
-    
+
 }
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -28,7 +28,10 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    carousel-image {
+        width: 50%;
     }
 }
