@@ -1,4 +1,4 @@
-from anchorwebflask.app import app
+from anchorwebflask.app import application
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    application.run(debug=False)
