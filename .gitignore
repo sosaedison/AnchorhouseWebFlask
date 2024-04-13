@@ -1,2 +1,4 @@
 anchorwebflask/__pycache__/__init__.cpython-38.pyc
 anchorwebflask/__pycache__/routes.cpython-38.pyc
+.venv
+*.pyc

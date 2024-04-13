@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  anchorhousewebflask:
+    container_name: anchorhouse_backend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: debug
+    environment:
+      FLASK_ENV: development
+      FLASK_DEBUG: 1
+      PYTHONPATH: /app
+      FLASK_RUN_PORT: 8080
+    volumes:
+      - ./anchorwebflask:/app
+    ports:
+      - 8080:8080
+      - 5678:5678
+
+
+volumes:
+  anchorwebflask:
