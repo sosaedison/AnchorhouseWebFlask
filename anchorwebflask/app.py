@@ -9,81 +9,81 @@ EMAIL_USER = os.environ.get("EMAIL_ADDRESS", default="")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", default="")
 SECRET_KEY = os.environ.get("SESSION_KEY", default="")
 
-app = Flask(__name__)
-app.secret_key = SECRET_KEY
+application = Flask(__name__)
+application.secret_key = SECRET_KEY
 
 config = {"extensions": [".js", ".css", ".png", ".jpg"], "hash_size": 10}
 
 cache_buster = CacheBuster(config=config)
 
-cache_buster.init_app(app)
+cache_buster.init_app(application)
 
 
-@app.get("/")
-@app.get("/home")
+@application.get("/")
+@application.get("/home")
 def home():
     return render_template("home.html")
 
 
-@app.get("/about")
+@application.get("/about")
 def about():
     return render_template("about.html", title="About")
 
 
-@app.get("/basic-support-services")
+@application.get("/basic-support-services")
 def basic_support_services():
     return render_template("basic_support_services.html", title="Support Services")
 
 
-@app.get("/in-home-support-services")
+@application.get("/in-home-support-services")
 def in_home_support_services():
     return render_template(
         "in_home_support_services.html", title="In-Home Support Services"
     )
 
 
-@app.get("/employment-services")
+@application.get("/employment-services")
 def employment_services():
     return render_template("employment_services.html", title="Employment Services")
 
 
-@app.get("/skilled-nursing-services")
+@application.get("/skilled-nursing-services")
 def nursing():
     return render_template("skillednursingservices.html", title="Skills")
 
 
-@app.get("/companion-services")
+@application.get("/companion-services")
 def companion():
     return render_template("companionservices.html", title="Skills")
 
 
-@app.get("/homemaker-services")
+@application.get("/homemaker-services")
 def homemaker():
     return render_template("homemakerservices.html", title="Skills")
 
 
-@app.get("/supported-living-services")
+@application.get("/supported-living-services")
 def supported():
     return render_template("supportedliving.html", title="Skills")
 
 
-@app.get("/respite-services")
+@application.get("/respite-services")
 def respite():
     return render_template("respiteservices.html", title="Skills")
 
 
-@app.get("/resources")
+@application.get("/resources")
 def resources():
     return render_template("resources.html", title="Resources")
 
 
-@app.get("/locations")
+@application.get("/locations")
 def locations():
     return render_template("locations.html", title="Locations")
 
 
-@app.get("/apply")
-@app.post("/apply")
+@application.get("/apply")
+@application.post("/apply")
 def apply():
     if request.method == "POST":
         pass
@@ -91,8 +91,8 @@ def apply():
     return render_template("apply.html", title="Apply")
 
 
-@app.get("/contact-form")
-@app.post("/contact-form")
+@application.get("/contact-form")
+@application.post("/contact-form")
 def contactform():
     form = request.form
     missing = list()
