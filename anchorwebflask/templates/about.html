@@ -1,89 +1,227 @@
-{% extends "layouts.html" %}
-{% block content %}
-    <div class=".container">
-        <div class="text-center">
-          <div class="jumbotron" style="padding: 2em;">
-            <div class="col-12">
-                <h1 class="display-4">Why AnchorHouse</h1>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="icon" type="image/png" href="https://www.myanchorhouse.com/images/favicon.ico" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://www.myanchorhouse.com/css/layouts.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            /*
+                Extra small devices (portrait phones, less than 576px)
+                No media query for `xs` since this is the default in Bootstrap
+
+                Small devices (landscape phones, 576px and up)
+                @media (min-width: 576px) { ... }
+
+                /*Medium devices (tablets, 768px and up)
+                @media (min-width: 768px) { ... }
+
+                /*Large devices (desktops, 992px and up)
+                @media (min-width: 992px) { ... }
+
+                /*Extra large devices (large desktops, 1200px and up)
+                @media (min-width: 1200px) { ... }
+                */
+        </style>
+        <title>About | AnchorHouse</title>
+    </head>
+
+    <body>
+        <!--NAVBAR WITH LOGO AND LINKS-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a href="https://www.myanchorhouse.com/" class="navbar-brand">
+                    <h1>AnchorHouse LLC</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/locations.html" class="nav-link">Locations</a>
+                        </li>
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a href="https://www.myanchorhouse.com/basic_support_services.html"
+                                    class="dropdown-item">Basic Support Services</a>
+                                <a href="https://www.myanchorhouse.com/in_home_support_services.html"
+                                    class="dropdown-item">In-Home Support Services</a>
+                                <a href="https://www.myanchorhouse.com/employment_services.html"
+                                    class="dropdown-item">Employment Services</a>
+                            </div>
+                        </div>
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/resources.html" class="nav-link">Resources</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://www.myanchorhouse.com/apply.html" class="nav-link">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-            <p class="lead mx-auto" style="width: 70%;">
-                If you want a service that makes you feel like you never left home, then Anchor House, LLC. is the right place for you. With over a decade of In-home, health care experience, we provide a service like no other. 
-            </p>
-        </div>
-    </div>
-    <div class=".container">
-        <div class="text-center">
-          <div class="jumbotron" style="padding: 2em;">
-            <div class="col-12">
-                <h1 class="display-4">Mission Statement</h1>
+        </nav>
+        <div class="container">
+            <div class="text-center">
+                <div class="jumbotron" style="padding: 2em;">
+                    <div class="col-12">
+                        <h1 class="display-4">Why AnchorHouse</h1>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-            <p class="lead mx-auto text-wrap" style="width: 70%;">
-                We believe that home health care services are an essential part of the health care delivery system. By providing continuing care to clients in their own homes, home health services minimize the effects of illness, accident, or disability and cost.
-                <br><br>
-                Anchor House recognizes the worth of all persons, including the elderly or those with disabilities. We believe the contributions of these persons are no less important than the contributions of other members of our society. We are dedicated to helping these persons retain or regain their maximum participation in society.
-                <br><br>
-                We recognize that the aging process is an unavoidable part of life. We understand chronic disease and disability may be part of that process.
-                <br><br>
-                Person-Centered Planning - In providing care to our clients, Anchor House recognizes that clients and their families have certain rights to self-determination. They have the right to participate in the planning of their care, to make decisions about their health care, and to maintain their independence as long as possible.
-                <br><br>
-                Health education is an integral part of Anchor House’s program.
-                <br><br>
-                Anchor House recognizes that the behavior, attitudes, knowledge, and understanding of our staff have an important influence on helping clients attain and maintain their health.
-                <br><br>
-                Therefore, we are committed to the rehabilitation of aged, diseased, and/or disabled individuals within their home environment, allowing maximum contribution, retention of self-respect, and independence.
-                <br><br>
-                When rehabilitation or recovery is not realistic, we commit to providing dying individuals with appropriate care and coordinated services, supporting their dignity and self-respect.
-            </p>
-        </div>
-    </div>
-    <div class=".container-fluid">
-      <div class="row">
-        <div class="jumbotron text-center col-6">
-            <div class="col-12">
-                <h1 class="display-4">Goals</h1>
-            </div>
-        </div>
-        <div class="jumbotron text-center col-6">
-          <div class="col-12">
-              <h1 class="display-4">Objectives</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <ul class="list-group list-group-flush col-6">
-        <li class="list-group-item">To provide all levels of home care service in collaboration with client's physicians and other members of the health care team, allowing clients to remain in their own homes.</li>
-        <li class="list-group-item">To provide a broad base of services based on our clients’ needs, involving clients in establishing, implementing, and evaluating services.</li>
-        <li class="list-group-item">To maintain clients in their homes as long as possible by providing nursing care and related health services.</li>
-        <li class="list-group-item">To assist clients in using all restorative methods, tools, and procedures to return to their normal pattern of living as soon as possible.</li>
-        <li class="list-group-item">To provide cost-competitive, quality service.</li>
-        <li class="list-group-item">To develop a relationship with referral sources to effectively meet the home care needs of clients.</li>
-        <li class="list-group-item">To serve as a link between clients and available community resources.</li>
-      </ul>
-      <ul class="list-group list-group-flush col-6">
-        <li class="list-group-item">To provide a coordinated team approach to Long term care, therapeutic and rehabilitative health care</li>
-        <li class="list-group-item">To provide home health care services and training that allow clients and their caregivers to assume personal responsibility for the client’s health and personal needs.</li>
-        <li class="list-group-item"> To provide a review vehicle for continuous examination of the care a client is receiving from the agency.</li>
-        <li class="list-group-item">To provide educational opportunities within the health care system for employees through an ongoing in-service program, and participation in professional organizations.</li>
-        <li class="list-group-item">To provide coordinated liaison with health and social services or human services agencies to meet the needs of the community through joint efforts, meetings, and community awareness programs.</li>
-        <li class="list-group-item">To provide a physical work environment favorable to maximum employee performance.</li>
-      </ul>
-    </div>
-    <div class=".container-fluid">
-        <div class="jumbotron text-center" style="padding: 1em;">
-            <div class="col-12">
-                <p class="lead">Certifications
-                  Minnesota Department of Health Comprehensive License
-                  <br><br>
-                  Minnesota Department of Human Services 245 D License
+            <div class="col-12 text-center">
+                <p class="lead mx-auto" style="width: 70%;">
+                    If you want a service that makes you feel like you never left home, then Anchor House, LLC. is the
+                    right place for you. With over a decade of In-home, health care experience, we provide a service
+                    like no other.
                 </p>
             </div>
         </div>
-    </div>
-{% endblock content%}
+        <div class="container">
+            <div class="text-center">
+                <div class="jumbotron" style="padding: 2em;">
+                    <div class="col-12">
+                        <h1 class="display-4">Mission Statement</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <p class="lead mx-auto text-wrap" style="width: 70%;">
+                    We believe that home health care services are an essential part of the health care delivery system.
+                    By providing continuing care to clients in their own homes, home health services minimize the
+                    effects of illness, accident, or disability and cost.
+                    <br><br>
+                    Anchor House recognizes the worth of all persons, including the elderly or those with disabilities.
+                    We believe the contributions of these persons are no less important than the contributions of other
+                    members of our society. We are dedicated to helping these persons retain or regain their maximum
+                    participation in society.
+                    <br><br>
+                    We recognize that the aging process is an unavoidable part of life. We understand chronic disease
+                    and disability may be part of that process.
+                    <br><br>
+                    Person-Centered Planning - In providing care to our clients, Anchor House recognizes that clients
+                    and their families have certain rights to self-determination. They have the right to participate in
+                    the planning of their care, to make decisions about their health care, and to maintain their
+                    independence as long as possible.
+                    <br><br>
+                    Health education is an integral part of Anchor House’s program.
+                    <br><br>
+                    Anchor House recognizes that the behavior, attitudes, knowledge, and understanding of our staff have
+                    an important influence on helping clients attain and maintain their health.
+                    <br><br>
+                    Therefore, we are committed to the rehabilitation of aged, diseased, and/or disabled individuals
+                    within their home environment, allowing maximum contribution, retention of self-respect, and
+                    independence.
+                    <br><br>
+                    When rehabilitation or recovery is not realistic, we commit to providing dying individuals with
+                    appropriate care and coordinated services, supporting their dignity and self-respect.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="jumbotron text-center col-6">
+                    <div class="col-12">
+                        <h1 class="display-4">Goals</h1>
+                    </div>
+                </div>
+                <div class="jumbotron text-center col-6">
+                    <div class="col-12">
+                        <h1 class="display-4">Objectives</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="list-group list-group-flush col-6">
+                <li class="list-group-item">To provide all levels of home care service in collaboration with client's
+                    physicians and other members of the health care team, allowing clients to remain in their own homes.
+                </li>
+                <li class="list-group-item">To provide a broad base of services based on our clients’ needs, involving
+                    clients in establishing, implementing, and evaluating services.</li>
+                <li class="list-group-item">To maintain clients in their homes as long as possible by providing nursing
+                    care and related health services.</li>
+                <li class="list-group-item">To assist clients in using all restorative methods, tools, and procedures to
+                    return to their normal pattern of living as soon as possible.</li>
+                <li class="list-group-item">To provide cost-competitive, quality service.</li>
+                <li class="list-group-item">To develop a relationship with referral sources to effectively meet the home
+                    care needs of clients.</li>
+                <li class="list-group-item">To serve as a link between clients and available community resources.</li>
+            </ul>
+            <ul class="list-group list-group-flush col-6">
+                <li class="list-group-item">To provide a coordinated team approach to Long term care, therapeutic and
+                    rehabilitative health care</li>
+                <li class="list-group-item">To provide home health care services and training that allow clients and
+                    their caregivers to assume personal responsibility for the client’s health and personal needs.</li>
+                <li class="list-group-item"> To provide a review vehicle for continuous examination of the care a client
+                    is receiving from the agency.</li>
+                <li class="list-group-item">To provide educational opportunities within the health care system for
+                    employees through an ongoing in-service program, and participation in professional organizations.
+                </li>
+                <li class="list-group-item">To provide coordinated liaison with health and social services or human
+                    services agencies to meet the needs of the community through joint efforts, meetings, and community
+                    awareness programs.</li>
+                <li class="list-group-item">To provide a physical work environment favorable to maximum employee
+                    performance.</li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="jumbotron text-center" style="padding: 1em;">
+                <div class="col-12">
+                    <p class="lead">Certifications
+                        Minnesota Department of Health Comprehensive License
+                        <br><br>
+                        Minnesota Department of Human Services 245 D License
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <footer class="footer text-center text-md-left">
+            <div class="row text-center text-mid-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">AnchorHouse LLC</h6>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <a class=".text-muted text-dark" href="https://www.myanchorhouse.com/contact.html">Contact
+                            Us</a>
+                    </h6>
+                </div>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
